@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de formularios</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="procesar.php" method="post" autocomplete="on">
+
+        <div class="form-group">
+        <label for="Nombre">Nombre Completo</label>
+        <input type="text" id="Nombre" name="formName" placeholder="Nombre y apellidos" required>
+        </div>
+
+        <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+        </div>
+
+        <div class="form-group">
+        <label for="pass">Introducir Contraseña</label>
+        <input type="password" id="pass" name="pass" placeholder="Contraseña" required minlength="8">
+        </div>
+
+              <div class="form-group">
+        <label for="pass2">Repetir Contraseña</label>
+        <input type="password" id="pass2" name="pass2" placeholder="Contraseña" required minlength="8">
+        </div>
+
+        <div class="form-group">
+        <label for="Nombre">Nombre Completo</label>
+        <input type="tel" id="phone" name="phone" placeholder="Numero de telefono" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Número de teléfono" required>
+        </div>
+
+      <!-- 
+        <input type="number" min="1" max="1000">
+        <input type="checkbox" name="checkbox" id="checkbox"> 
+        -->
+
+        <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="Tu mensaje"></textarea>
+        
+        <select name="servicio" id="servicio">
+            <option value="">Seleccionar servicio</option>
+            <option value="Branding">Branding</option>
+            <option value="web">Diseño web</option>
+            <option value="uxui">UX/UI</option>
+        </select>
+
+        <div class="form-group">
+
+        <label for="fecha">Inicio Proyecto</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <label for="color">Color corporativo</label>
+        <input type="color" name="color" id="color">
+        </div>
+
+        <div class="form-group">
+        <button type="submit" >Enviar formulario</button>
+        <button type="reset">Limpiar formulario</button>
+        </div>
+
+
+    </form>
+</body>
+</html>
